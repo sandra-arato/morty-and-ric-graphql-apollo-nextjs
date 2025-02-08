@@ -2,7 +2,8 @@
 import useAuth, { User } from '@/app/store/hooks';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { Button } from '@chakra-ui/react';
+import Navigation from './navigation';
+import Characters from './characters';
 
 type DashboardProps = {
   user: User | null;
@@ -30,7 +31,8 @@ export default function Dashboard({ user }: DashboardProps) {
     <>
       {isClient && user ? (
         <>
-          <Button onClick={onSignOut}>Sign Out</Button>
+          <Navigation user={user} onSignOut={onSignOut} />
+          <Characters />
         </>
       ) : (
         <div>Loading...</div>
