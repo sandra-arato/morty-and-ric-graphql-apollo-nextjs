@@ -21,5 +21,6 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ## Deploy on Vercel
 
 This project automatically deploys on Vercel.
+[Live demo](https://morty-and-ric-graphql-apollo-nextjs.vercel.app/)
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
